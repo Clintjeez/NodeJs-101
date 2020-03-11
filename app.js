@@ -12,25 +12,34 @@
 
 //myEmitter.emit('someEvent', 'the event was emmitted');
 
-var events = require('events');
-var util = require('util');
+//var events = require('events');
+//var util = require('util');
  
-var Person = function(name){
-    this.name = name;
-}
+//var Person = function(name){
+//    this.name = name;
+//}
 
-util.inherits(Person, events.EventEmitter);
+//util.inherits(Person, events.EventEmitter);
 
-var james = new Person('james');
-var mary= new Person('mary');
-var clinton = new Person('clinton');
-var people = [james, mary, clinton];
+//var james = new Person('james');
+//var mary= new Person('mary');
+//var clinton = new Person('clinton');
+//var people = [james, mary, clinton];
 
-people.forEach(function(person){
-    person.on('speak', function(mssg){
-        console.log(person.name + ' said: ' + mssg)
-    })
+//people.forEach(function(person){
+//    person.on('speak', function(mssg){
+//        console.log(person.name + ' said: ' + mssg)
+//    })
+//});
+
+//james.emit('speak', 'hey dudes')
+//clinton.emit('speak', 'lets go party')
+
+var fs = require('fs');
+
+fs.readFile('readme.txt', 'utf8', function(err, data){
+    fs.writeFile('writeMe.txt', data);
 });
 
-james.emit('speak', 'hey dudes')
-clinton.emit('speak', 'lets go party')
+//fs.writeFileSync('writeMe.txt', readMe)
+
