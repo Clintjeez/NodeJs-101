@@ -35,11 +35,21 @@
 //james.emit('speak', 'hey dudes')
 //clinton.emit('speak', 'lets go party')
 
+//var fs = require('fs');
+
+//fs.unlink('writeMe.txt');
+
+//fs.readFile('readme.txt', 'utf8', function(err, data){
+   // fs.writeFile('writeMe.txt', data);
+//});
+
+
 var fs = require('fs');
 
-fs.readFile('readme.txt', 'utf8', function(err, data){
-    fs.writeFile('writeMe.txt', data);
-});
+fs.unlink('./stuff/writeMe.txt', funvtio(){
+    fs.rmdir('stuff')
+})
+
 
 //fs.writeFileSync('writeMe.txt', readMe)
 
