@@ -17,12 +17,6 @@
             letter-spacing: 2px;
             text-align: center;
         }
-        h2{
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-        }
         p{
             font-size: 16px;
             text-align: center;
@@ -31,15 +25,7 @@
 </head>
 <body>
     <%- include ('partials/nav') %>
-    <h1>Welcome to the profile of <%= person %> </h1>
-    <p> <strong>Age: </strong><%= data.age %></p>
-    <p> <strong>Job: </strong><%= data.job %></p>
-    <h2>Hobbies</h2>
-    <ul>
-        <% data.hobbies.forEach(function(item){ %>
-        <li><%= item %></li>
-
-    <%  }); %>
-    </ul>
+    <h1>Welcome to the most awesome website on the net</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, culpa. Atque, obcaecati?</p>
 </body>
 </html>
